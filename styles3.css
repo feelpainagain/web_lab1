@@ -7,10 +7,22 @@ body{
   .grid-container {
     padding: 0%;
     display: grid;
-    grid-template-areas: 'head'
-                         ;
+    grid-template-areas: 'arrows'
+                         'head';
+                         
+}
+.arrows{
+    align-items: end;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    grid-area: arrows;
+    border: 2px double rgb(0, 238, 255);
+    background-color:#258eb877;
+    
 }
 .div1 {
+    min-height: 120dvh;
     grid-area: head;
     border: 2px double rgb(0, 238, 255);
     padding-top: 0%;
@@ -29,11 +41,20 @@ body{
     margin: 0%;
  }
  .pic3{
+    
     height: 5%;
     width: 5%;
 }
 .pic4{
-    padding-left: 80%;
+    padding-left: 90%;
     height: 5%;
     width: 5%;
+}
+.pic5{
+    height: 50%;
+     width: 50%;
+}
+.pic6{
+    height: 25%;
+    width: 50%;
 }
